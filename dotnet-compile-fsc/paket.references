@@ -1,0 +1,11 @@
+group core
+Microsoft.NETCore.targets
+Microsoft.NET.sdk
+FSharp.Net.Sdk
+FSharp.Core
+Microsoft.Extensions.DependencyModel
+Microsoft.NETCore.Platforms
+NuGet.RuntimeModel
+Nuget.DependencyResolver.Core
+Nuget.ProjectModel
+Microsoft.Dotnet.Compiler.Common

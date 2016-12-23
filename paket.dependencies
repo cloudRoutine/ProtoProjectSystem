@@ -1,0 +1,41 @@
+source https://dotnet.myget.org/F/roslyn/api/v3/index.json
+source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
+source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
+source https://dotnet.myget.org/F/cli-deps/api/v3/index.json
+source https://api.nuget.org/v3/index.json
+
+
+group core
+	source https://dotnet.myget.org/F/roslyn/api/v3/index.json
+	source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+	source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
+	source https://www.myget.org/F/netcorecli-fsc-preview3/api/v3/index.json
+	source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
+	source https://dotnet.myget.org/F/cli-deps/api/v3/index.json
+	source https://api.nuget.org/v3/index.json
+
+
+nuget FSharp.Core
+nuget FSharp.Net.Sdk
+nuget Microsoft.Dotnet.Compiler.Common 1.0.0-preview2-1-003177 preview
+nuget Microsoft.Extensions.DependencyModel
+nuget Microsoft.NET.sdk
+nuget Microsoft.NETCore.Platforms
+nuget Microsoft.NETCore.targets
+	nuget Microsoft.VisualStudio.ProjectSystem.Managed prerelease
+nuget Nuget.DependencyResolver.Core 4.0.0-rc2 rc
+nuget Nuget.ProjectModel 4.0.0-rc2 rc
+nuget NuGet.RuntimeModel
+
+
+group vs
+
+	source https://dotnet.myget.org/F/roslyn/api/v3/index.json
+	source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+	source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
+	source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
+	source https://dotnet.myget.org/F/cli-deps/api/v3/index.json
+	source https://api.nuget.org/v3/index.json
+
+	nuget Microsoft.VisualStudio.ProjectSystem.Managed.VS prerelease
