@@ -1,2 +1,5 @@
 group core
 Microsoft.VisualStudio.ProjectSystem.Managed
+Microsoft.CodeAnalysis
+System.ComponentModel
+Microsoft.Build.Framework

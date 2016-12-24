@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c)  Microsoft.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="FSharpProjectSystem.AD850547-1A4E-4140-B898-11A5132300B5" Version="0.0.1"  Language="en-US" Publisher="Jared Hester"/>
+    <DisplayName>FSharp Project System</DisplayName>
+    <Description xml:space="preserve">FSharp Project System [CPS]</Description>
+    <PackageId>Microsoft.VisualStudio.ProjectSystem.Managed</PackageId>
+  </Metadata>
+  <Installation SystemComponent="true" >
+    <InstallationTarget Version="[15.0,]" Id="Microsoft.VisualStudio.Pro" />
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />   
+  </Prerequisites>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="ProjectSystem.VisualStudio" Path="|ProjectSystem.VisualStudio|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="ProjectSystem.VisualStudio" Path="|ProjectSystem.VisualStudio;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
