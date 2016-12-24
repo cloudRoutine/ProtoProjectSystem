@@ -1,7 +1,7 @@
-﻿namespace Microsoft.DotNet.Tools.Compiler
+﻿namespace FSharpProjectSystem.Compiler
 
 open System
-open Microsoft.DotNet.Cli.CommandLine
+open FSharpProjectSystem.Cli.CommandLine
 open Microsoft.DotNet.ProjectModel
 open Microsoft.DotNet.Cli.Compiler.Common
 

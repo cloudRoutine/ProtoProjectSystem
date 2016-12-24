@@ -1,4 +1,4 @@
-﻿namespace Microsfot.DotNet.Tools.Compiler.Fsc
+﻿namespace FSharpProjectSystem.Compiler.Fsc
 
 open System
 open System.Collections.Generic
@@ -8,13 +8,17 @@ open System.Reflection
 open System.Runtime.InteropServices
 open System.Text
 open Microsoft.DotNet.Cli
-open Microsoft.DotNet.Cli.CommandLine
 open Microsoft.DotNet.Cli.Compiler.Common
 open Microsoft.DotNet.Cli.Utils
 open Microsoft.DotNet.ProjectModel
 open Microsoft.DotNet.ProjectModel.Resolution
 open Microsoft.DotNet.Tools.Compiler
 open Microsoft.FSharp.Linq.NullableOperators
+open FSharpProjectSystem
+open FSharpProjectSystem.Compiler
+open FSharpProjectSystem.Cli
+open FSharpProjectSystem.Cli.CommandLine
+
 
 module CompileFscCommand =
     open NuGet.Configuration

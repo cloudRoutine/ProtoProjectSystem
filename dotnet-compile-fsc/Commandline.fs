@@ -1,4 +1,4 @@
-﻿namespace Microsoft.DotNet.Cli
+﻿namespace FSharpProjectSystem.Cli
 
 module CommandLine =
     open System
