@@ -59,7 +59,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Constants.fs" />
     <Compile Include="Capabilities.fs" />
+    <Compile Include="ProjectTypes.fs" />
     <None Include="Script.fsx" />
     <Content Include="paket.references" />
   </ItemGroup>
@@ -158,11 +160,6 @@
       <ItemGroup>
         <Reference Include="Microsoft.VisualStudio.ProjectSystem.Interop">
           <HintPath>..\packages\core\Microsoft.VisualStudio.ProjectSystem\lib\net46\Microsoft.VisualStudio.ProjectSystem.Interop.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.ProjectSystem.VS">
-          <HintPath>..\packages\core\Microsoft.VisualStudio.ProjectSystem\lib\net46\Microsoft.VisualStudio.ProjectSystem.VS.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

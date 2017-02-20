@@ -1,2 +1,4 @@
 group vs
 Microsoft.VisualStudio.ProjectSystem.Managed.VS
+Microsoft.VisualStudio.Shell.15.0
+Microsoft.VisualStudio.Shell.Framework

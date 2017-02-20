@@ -16,16 +16,16 @@ group core
 	source https://api.nuget.org/v3/index.json
 
 
-	nuget FSharp.Core 4.0.1.7-alpha prerelease 
+	nuget FSharp.Core prerelease
 	nuget FSharp.Net.Sdk
-	nuget Microsoft.Build.Framework 15.1.0-preview-000458-02 prerelease
+	nuget Microsoft.Build.Framework prerelease
 	nuget Microsoft.CodeAnalysis
-	nuget Microsoft.Dotnet.Compiler.Common 1.0.0-preview2-1-003177 preview
+	nuget Microsoft.Dotnet.Compiler.Common prerelease
 	nuget Microsoft.Extensions.DependencyModel
 
 	nuget Microsoft.VisualStudio.ProjectSystem.Managed prerelease
-	nuget Nuget.DependencyResolver.Core 4.0.0-rc2 rc
-	nuget Nuget.ProjectModel 4.0.0-rc2 rc
+	nuget Nuget.DependencyResolver.Core prerelease
+	nuget Nuget.ProjectModel prerelease
 	nuget NuGet.RuntimeModel
 	nuget System.ComponentModel
 
@@ -40,3 +40,5 @@ group vs
 	source https://api.nuget.org/v3/index.json
 
 	nuget Microsoft.VisualStudio.ProjectSystem.Managed.VS prerelease
+nuget Microsoft.VisualStudio.Shell.15.0
+nuget Microsoft.VisualStudio.Shell.Framework
