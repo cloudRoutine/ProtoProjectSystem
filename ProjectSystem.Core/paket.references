@@ -1,7 +1,6 @@
 FSharp.Core
-group core
-Microsoft.VisualStudio.ProjectSystem.Managed
-Microsoft.CodeAnalysis
-System.ComponentModel
 Microsoft.Build.Framework
 Microsoft.Build
+Microsoft.VisualStudio.ProjectSystem.Managed
+Microsoft.CodeAnalysis
+

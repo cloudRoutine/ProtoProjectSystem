@@ -1,9 +1,0 @@
-FSharp.Core
-
-group compile
-Microsoft.Extensions.DependencyModel
-NuGet.RuntimeModel
-Nuget.DependencyResolver.Core
-Nuget.ProjectModel
-Microsoft.Dotnet.ProjectModel
-Microsoft.Dotnet.Compiler.Common

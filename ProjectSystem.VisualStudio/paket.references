@@ -1,6 +1,8 @@
 FSharp.Core
-
-group vs
+Microsoft.Build.Framework
+Microsoft.Build
+Microsoft.VisualStudio.ProjectSystem
+Microsoft.VisualStudio.ProjectSystem.SDK
 Microsoft.VisualStudio.ProjectSystem.Managed.VS
 Microsoft.VisualStudio.Shell.15.0
 Microsoft.VisualStudio.Shell.Framework
