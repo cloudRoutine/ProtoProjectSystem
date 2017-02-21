@@ -1,34 +1,44 @@
-source https://dotnet.myget.org/F/roslyn/api/v3/index.json
-source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
-source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
-source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
-source https://dotnet.myget.org/F/cli-deps/api/v3/index.json
 source https://api.nuget.org/v3/index.json
 
-
-group core
-
     framework: net461
-    source https://dotnet.myget.org/F/roslyn/api/v3/index.json
-    source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
-    source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
-    source https://www.myget.org/F/netcorecli-fsc-preview3/api/v3/index.json
-    source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
-    source https://dotnet.myget.org/F/cli-deps/api/v3/index.json
-    source https://api.nuget.org/v3/index.json
-
 
     nuget FSharp.Core prerelease
     nuget FSharp.Net.Sdk
-    nuget Microsoft.Build.Framework prerelease
-    nuget Microsoft.CodeAnalysis
-    nuget Microsoft.Dotnet.Compiler.Common prerelease
-    nuget Microsoft.Extensions.DependencyModel
+    
 
-    nuget Microsoft.VisualStudio.ProjectSystem.Managed prerelease
+group compile
+    source https://dotnet.myget.org/F/roslyn/api/v3/index.json
+    source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+    source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
+    source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
+    source https://dotnet.myget.org/F/msbuild/api/v3/index.json
+    source https://api.nuget.org/v3/index.json
+
+    framework: net461
+
+
+    nuget Microsoft.Dotnet.Compiler.Common prerelease
+    nuget Microsoft.Dotnet.ProjectModel prerelease
     nuget Nuget.DependencyResolver.Core prerelease
     nuget Nuget.ProjectModel prerelease
+    nuget Microsoft.Extensions.DependencyModel
     nuget NuGet.RuntimeModel
+
+
+
+group core
+    source https://dotnet.myget.org/F/roslyn/api/v3/index.json
+    source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+    source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
+    source https://dotnet.myget.org/F/msbuild/api/v3/index.json    
+    source https://api.nuget.org/v3/index.json
+
+    framework: net461
+
+    nuget Microsoft.Build prerelease
+    nuget Microsoft.Build.Framework prerelease
+    nuget Microsoft.CodeAnalysis
+    nuget Microsoft.VisualStudio.ProjectSystem.Managed prerelease
     nuget System.ComponentModel
 
 
@@ -37,12 +47,11 @@ group vs
     framework: net461
 
     source https://dotnet.myget.org/F/roslyn/api/v3/index.json
-    source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
-    source https://dotnet.myget.org/F/dotnet-cli/api/v3/index.json
     source https://dotnet.myget.org/F/dotnet-buildtools/api/v3/index.json
-    source https://dotnet.myget.org/F/cli-deps/api/v3/index.json
     source https://api.nuget.org/v3/index.json
 
+    nuget Microsoft.VisualStudio.Composition prerelease
     nuget Microsoft.VisualStudio.ProjectSystem.Managed.VS prerelease
-    nuget Microsoft.VisualStudio.Shell.15.0
-    nuget Microsoft.VisualStudio.Shell.Framework
+    nuget Microsoft.VisualStudio.Shell.15.0 prerelease
+    nuget Microsoft.VisualStudio.Shell.Framework prerelease
+    nuget Microsoft.VSSDK.BuildTools prerelease

@@ -37,6 +37,15 @@
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <PropertyGroup>
+        <__paket__Microsoft_VSSDK_BuildTools_props>Microsoft.VSSDK.BuildTools</__paket__Microsoft_VSSDK_BuildTools_props>
+        <__paket__Microsoft_VSSDK_BuildTools_targets>Microsoft.VSSDK.BuildTools</__paket__Microsoft_VSSDK_BuildTools_targets>
+      </PropertyGroup>
+    </When>
+  </Choose>
+  <Import Project="..\packages\vs\Microsoft.VSSDK.BuildTools\build\$(__paket__Microsoft_VSSDK_BuildTools_props).props" Condition="Exists('..\packages\vs\Microsoft.VSSDK.BuildTools\build\$(__paket__Microsoft_VSSDK_BuildTools_props).props')" Label="Paket" />
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
+      <PropertyGroup>
         <__paket__Microsoft_VisualStudio_SDK_VsixSuppression_targets>Microsoft.VisualStudio.SDK.VsixSuppression</__paket__Microsoft_VisualStudio_SDK_VsixSuppression_targets>
       </PropertyGroup>
     </When>
@@ -114,6 +123,28 @@
     <Compile Include="AssemblyRedirects.cs" />
   </ItemGroup>
   <Import Project="..\..\build\Targets\VSL.Imports.targets" />
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
+      <ItemGroup>
+        <Reference Include="FSharp.Core">
+          <HintPath>..\packages\FSharp.Core\lib\net40\FSharp.Core.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
+      <ItemGroup>
+        <Reference Include="System.ValueTuple">
+          <HintPath>..\packages\System.ValueTuple\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <ItemGroup>
@@ -437,4 +468,5 @@
   </Choose>
   <Import Project="..\packages\vs\Microsoft.VisualStudio.ProjectSystem.SDK.Tools\build\$(__paket__Microsoft_VisualStudio_ProjectSystem_Sdk_Tools_targets).targets" Condition="Exists('..\packages\vs\Microsoft.VisualStudio.ProjectSystem.SDK.Tools\build\$(__paket__Microsoft_VisualStudio_ProjectSystem_Sdk_Tools_targets).targets')" Label="Paket" />
   <Import Project="..\packages\vs\Microsoft.VisualStudio.SDK.VsixSuppression\build\$(__paket__Microsoft_VisualStudio_SDK_VsixSuppression_targets).targets" Condition="Exists('..\packages\vs\Microsoft.VisualStudio.SDK.VsixSuppression\build\$(__paket__Microsoft_VisualStudio_SDK_VsixSuppression_targets).targets')" Label="Paket" />
+  <Import Project="..\packages\vs\Microsoft.VSSDK.BuildTools\build\$(__paket__Microsoft_VSSDK_BuildTools_targets).targets" Condition="Exists('..\packages\vs\Microsoft.VSSDK.BuildTools\build\$(__paket__Microsoft_VSSDK_BuildTools_targets).targets')" Label="Paket" />
 </Project>
