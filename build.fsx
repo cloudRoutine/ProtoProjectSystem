@@ -2,22 +2,13 @@ open System.IO; Directory.SetCurrentDirectory __SOURCE_DIRECTORY__
 
 let (^) = (<|)
 
-using (new System.Diagnostics.Process()) ^ fun proc -> 
-    proc.StartInfo.FileName <- Path.GetFullPath @"./.paket/paket.bootstrapper.exe"
-    proc.StartInfo.UseShellExecute <- false
+let run cmd args = using (new System.Diagnostics.Process()) ^ fun proc -> 
+    let pi, cmd = proc.StartInfo, Path.GetFullPath cmd
+    pi.FileName <- cmd; pi.Arguments <- args; pi.UseShellExecute <- false
     ignore ^ proc.Start(); proc.WaitForExit(); printfn ""
 
-#r @"./.paket/paket.exe" 
-open Paket
-open Paket.Logging
-
-let dependencies = "./paket.dependencies"
-
-using (event.Publish |> Observable.subscribe traceToConsole) ^ fun _ -> 
-    try tracefn "Paket restoring packages from - '%s'" ^ Path.GetFullPath dependencies
-        Dependencies.Locate("./paket.dependencies").Restore(false)
-        tracefn "Package Restoration Complete\n"
-    with exn -> traceErrorfn "Package Restoration Failed -\n%s" exn.Message
+run @"./.paket/paket.bootstrapper.exe" ""
+run @"./.paket/paket.exe" "restore"
 
 #r @"packages/FAKE/tools/FakeLib.dll"; open Fake 
 
