@@ -5,11 +5,8 @@ open System
 open System.ComponentModel.Composition
 open Microsoft.VisualStudio.ProjectSystem
 open Microsoft.VisualStudio.ProjectSystem.Properties
-open Microsoft.VisualStudio.ProjectSystem.VS
 open System.Diagnostics.CodeAnalysis
 open FSharpProjectSystem.Capabilities
-
-
 
 
 //type FSharpProjectProperties [<ImportingConstructor>] (configuredProject:ConfiguredProject) =

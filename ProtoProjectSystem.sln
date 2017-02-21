@@ -1,12 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectSystem.Core", "ProjectSystem.Core\ProjectSystem.Core.fsproj", "{008CD70D-4AF1-42A6-8BF8-202B78EEC6AA}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectSystem.VisualStudio", "ProjectSystem.VisualStudio\ProjectSystem.VisualStudio.fsproj", "{BB6D45C2-FF49-4EC4-A955-5EC86BE9D2EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{85607FD1-5B27-40FB-AC81-477A055EFB10}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.fsx = build.fsx
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
